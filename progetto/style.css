@@ -1,0 +1,262 @@
+body {
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+}
+h1,h2,h3,p {
+color: black;
+padding-bottom: 30px;
+}
+
+.big-text{font-size: 70px;}
+.med-text{font-size: 40px;}
+.small-text{font-size: 14px;}
+.intro-text{text-transform: uppercase;font-size: 20px; font-weight: bold;}
+
+@media (max-width: 820px){
+  .big-text{ font-size: 40px;}
+}
+
+/*HEADER*/
+.header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+
+.menu {
+  width: 58%;
+}
+
+.menu li {
+  display: inline-block;
+  float: right;
+}
+.menu a:hover{
+  border: solid rgba(36,62, 139);
+border-radius: 5px;
+background-color: rgba(36,62, 139);
+color: white;
+}
+.menu li a{
+color: black;
+margin-right: 5px;
+display: block;
+font-size: 20px;
+margin-top: 3px;
+}
+
+.logo {margin-left: 10%;}
+
+.contatti {}
+
+.contatti li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#icon{
+padding: 0;
+}
+
+@media (max-width: 820px){
+.contatti {display: none;}
+.menu{
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  padding-top: 80px;
+}
+.menu-open{
+  right: 0;
+}
+.menu li {
+display: block;
+}
+.menu-sp{
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+.menu-sp span{
+  background: black;
+  width: 100%;
+height: 3px;
+display: block;
+margin-bottom: 5px;
+}
+}
+
+/*WELCOME*/
+.welcome {
+  height: 600px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.welcome-content {
+  width: 90%;
+  max-width: 1350px;
+  float: right;
+}
+.welcome-img{
+  width:25%;
+  margin-right: 15%;
+  border-radius: 170px;
+  margin-left: 15%;
+}
+
+/*CHI SONO*/
+.titolo {
+margin-top: 50px;
+margin-left: 25%;
+margin-right: 25%;
+color: rgba(36,62, 139);
+margin-bottom: 50px;
+font-size: 70px;
+}
+.chi-sono p{
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 30px;
+}
+.presentazione {
+  color: grey;
+}
+span{
+color: black;
+}
+
+@media (max-width: 820px){
+  .titolo{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+/*CV*/
+.cv ul{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.job {
+  width: 180px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: white;
+  background-color: rgba(36,62, 139);
+  border-radius: 3px;
+}
+#job2{
+  margin-bottom: 10px;
+  border: red solid;
+}
+@media (max-width: 820px){
+  ul{
+    font-size: 20px;
+  }
+  .job{
+    font-size: 20px;
+    width: 150px;
+  }
+}
+/*SCRIVIMI*/
+.scrivimi{
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  text-align: center;
+}
+.form{
+  margin-bottom: 10px;
+  border: rgba(36,62, 139) solid;
+  border-radius: 5px;
+  width: 70%;
+}
+#invia{
+  background-color: rgba(36,62, 139);
+  color: white;
+}
+@media (max-width: 820px){
+.form{
+  width: 70%;
+}
+}
+/*FOOTER*/
+.footer{
+  margin-top: 50px;
+  width: 100%;
+  background-color: rgba(36,62, 139);
+  height: 150px;
+  text-decoration: none;
+  color: white;
+}
+.icon-footer, .mail-footer{
+  display: inline-block;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-top: 25px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.mail-footer {
+  float: right;
+}
+.mail-footer img{
+  margin-top: 5px;
+}
+#mail{
+  float: right;
+  color: white;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+@media (max-width: 820px){
+
+.footer{
+  display: none;
+}
+.sp-footer{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(36,62, 139);
+}
+.sp-icon-footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESETTARE IL PADDING DEGLI ELEMENTI PER NON AVERE PROBLEMI DI SOPRAPPOSIZIONE*/
+*,
+*:before,
+*:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
